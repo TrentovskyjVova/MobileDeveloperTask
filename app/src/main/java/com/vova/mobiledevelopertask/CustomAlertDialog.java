@@ -34,7 +34,7 @@ public class CustomAlertDialog extends AlertDialog {
 
         Observable.interval(10, TimeUnit.SECONDS)
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(aLong -> setCurrentTime(timeTV));
+                .subscribe(aLong -> dismiss());
     }
 
     private void setCurrentTime(TextView tv) {
